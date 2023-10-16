@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Megan Ginham Space Quiz practice project" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Space Quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Space Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info" accesskey="1">INFO</a></li>
+          <li><a href="#planet-questions" accesskey="2">PLANETS</a></li>
+          <li><a href="#star-questions" accesskey="3">STARS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="_blank">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Information</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" required />
+          </div>
+          <div class="info">
+            <label for="student-email"> Email:</label>
+            <input type="email" name="student-email" id="student-email" required />
+          </div>
+          <div class="info">
+            <label for="DOB">Date of Birth</label>
+            <input type="date" name="DOB" id="DOB" required />
+          </div>
+          <div class="info">
+            <label>How enthusiastic are you about space?</label>
+            <select name="student-type" id="student-type" required>
+              <option value="">(Select an option)</option>
+              <option value="1">Not very enthusiastic</option>
+              <option value="2">Kind of enthusiastic</option>
+              <option value="3">Very enthusiastic</option>
+            </select>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="planet-questions">
+          <h2 id="planet-questions">Planet Questions</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="planet-question-1">
+              <legend>On Mercury a day is twice as long as a year.</legend>
+              <ul class="answers-list">
+                <li><label><input type="radio" id="q1-a1" name="q1" value="true" /> True</label></li>
+                <li><label><input type="radio" id="q1-a2" name="q1" value="false" /> False</label></li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="planet-question-2">
+              <legend>Neptune has only completed one orbit around the Sun since its discovery.</legend>
+              <ul class="answers-list">
+                <li><label><input type="radio" id="q2-a1" name="q2" value="true" /> True</label></li>
+                <li><label><input type="radio" id="q2-a2" name="q2" value="false" /> False</label></li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="star-questions">
+          <h2 id="star-questions">Star Questions</h2>
+          <div class="question-block">
+            <p>3</p>
+            <fieldset class="question" name="star-question-1">
+              <legend>Which types of star tends to live longer: a dwarf star or a giant star?</legend>
+              <ul class="answers-list">
+                <li><label><input type="radio" id="q3-a1" name="q3" value="dwarf" required /> Dwarf star</label></li>
+                <li><label><input type="radio" id="q3-a2" name="q3" value="giant" /> Giant star</label></li>
+                <li><label><input type="radio" id="q3-a3" name="q3" value="same" /> They are about the same</label></li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>4</p>
+            <fieldset class="question" name="star-question-2">
+              <legend>What is the sun composed of?</legend>
+              <ul class="answers-list">
+                <li><label><input type="checkbox" id="q4-a1" name="q4" value="H" /> Hydrogen</label></li>
+                <li><label><input type="checkbox" id="q4-a2" name="q4" value="O" /> Oxygen</label></li>
+                <li><label><input type="checkbox" id="q4-a3" name="q4" value="U" /> Uranium</label></li>
+                <li><label><input type="checkbox" id="q4-a4" name="q4" value="Ne" /> Neon</label></li>
+                <li><label><input type="checkbox" id="q4-a5" name="q4" value="He" /> Helium</label></li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://github.com/mginham">Megan Ginham</a><br />
+        Calgary<br />
+        Alberta<br />
+        Canada
+      </address>
+    </footer>
+  </body>
+</html>
